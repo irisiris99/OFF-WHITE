@@ -64,6 +64,9 @@ li {
   font-size: 18px;
   font-weight: bold;
 }
+.navbar_menu li a:hover {
+  border-bottom: 1px dotted black;
+}
 
 .navbar_menu li a {
   padding: 8px 12px;
@@ -96,20 +99,30 @@ li {
   position: absolute;
   display: none;
   justify-content: center;
-  width: 100%;
+  width: 102.5%;
+  height: auto;
   top: 7%;
+  z-index: 1;
 }
 .navbar_menu:hover .dropdown {
   display: flex;
 }
 .dropdown ul {
-  padding: 20px 40px;
+  width: 8%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.5%;
 }
 .dropdown ul li {
-  padding: 8px;
+  padding: 6px 0px;
+  width: 100%;
+  text-align: left;
 }
 .dropdown ul li a {
-  font-size: 13px;
+  float: left;
+  font-size: 0.7vw;
+  padding: 6px 0px;
 }
 
 /* Main */
